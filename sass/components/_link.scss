@@ -1,0 +1,10 @@
+.link {
+    &:hover, 
+    &:focus {
+    color: var(--accent-text-color);
+
+        & .auth__icon {
+            fill: var(--accent-text-color);
+        }
+    }
+}

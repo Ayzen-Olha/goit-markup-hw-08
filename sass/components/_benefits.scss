@@ -1,0 +1,39 @@
+.benefits {
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        // display: flex;
+        // text-align: left;
+        line-height: 1.7em;
+    }
+
+    // &__item {
+    //     width: 270px;
+
+    //     &:not(:first-child):not(:first-child) {
+    //         margin-left: 30px;
+    //     }
+    // }
+
+    &__block {
+        @extend %flex-centered;
+        // width: 270px;
+        height: 120px;
+
+        border-radius: 4px;
+        background-color: var(--bgc-team-section);
+
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+

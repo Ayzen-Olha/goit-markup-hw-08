@@ -1,0 +1,38 @@
+.footer {
+    background-color: var(--minor-bg-color);
+    line-height: 1.7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__content {
+        // margin-bottom: 20px;
+    }
+
+    &__main {
+        // display: flex;
+        // align-items: baseline;
+        // text-align: left;
+    }
+
+    &__title {
+        display: block;
+        color: var(--white-color);
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        // margin-bottom: 20px;
+    }
+
+    &__connection {
+        // margin-left: 70px;
+    }
+
+    &__signup {
+        // margin-left: auto;
+    }
+
+    &__logo {
+        // margin-bottom: 20px;
+    }
+}
+
