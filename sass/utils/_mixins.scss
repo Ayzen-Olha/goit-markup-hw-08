@@ -1,14 +1,21 @@
-@mixin visually-hidden () {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    max-width: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  max-width: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-@mixin display-none () {
-    display: none;
+@mixin display-none() {
+  display: none;
+}
+
+@mixin positional-centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

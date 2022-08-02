@@ -1,4 +1,9 @@
 .signup {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     // text-align: left;
     // width: 570px;
     // display: flex;
@@ -14,7 +19,8 @@
 
     &__button {
         padding: 10px 28px 10px 29px;
-        margin-left: 12px;
+        margin-top: 20px;
+        // margin-left: 12px;
         display: flex;
         align-items: center;
         justify-content: space-between;

@@ -1,5 +1,5 @@
 .social {
-    // @extend %flex-centered;
+    @extend %flex-centered;
 
     &__link:not(:last-child) {
         margin-right: 10px;

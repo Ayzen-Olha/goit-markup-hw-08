@@ -6,19 +6,19 @@
         margin-bottom: 10px;
     }
 
-    &__list {
-        // display: flex;
-        // text-align: left;
-        line-height: 1.7em;
-    }
-
-    // &__item {
-    //     width: 270px;
-
-    //     &:not(:first-child):not(:first-child) {
-    //         margin-left: 30px;
-    //     }
+    // &__list {
+    //     display: flex;
+    //     text-align: left;
     // }
+
+    &__item {
+        // width: 270px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+            // margin-right: 30px;
+        }
+    }
 
     &__block {
         @extend %flex-centered;
@@ -29,6 +29,13 @@
         background-color: var(--bgc-team-section);
 
         margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: .03em;
+        text-align: left;
     }
 }
 

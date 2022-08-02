@@ -1,0 +1,33 @@
+.menu-container {
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &.is-open {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow-y: scroll;
+
+    text-align: left;
+    padding: 48px 40px;
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+
+    background-color: var(--white-color);
+  }
+}
