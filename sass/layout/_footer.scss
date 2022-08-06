@@ -1,45 +1,69 @@
 .footer {
-    background-color: var(--minor-bg-color);
-    line-height: 1.7;
-    padding-top: 60px;
-    padding-bottom: 60px;
-            width: 100%;
+  background-color: var(--minor-bg-color);
+  line-height: 1.7;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
 
-    &__wrap {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
 
-        @media screen and (max-width:767px) {
-            gap: 60px;
-        }
+    @media screen and(max-width: 767px) {
+      gap: 60px;
     }
 
-    // &__main {
-    //     display: flex;
-    //     align-items: baseline;
-    //     text-align: left;
-    // }
-
-    &__title {
-        display: block;
-        color: var(--white-color);
-        font-weight: bold;
-        font-size: 14px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 60px;
+      align-items: baseline;
     }
 
-    // &__connection {
-    //     margin-left: 70px;
-    // }
-
-    // &__signup {
-    //     margin-left: auto;
-    // }
-
-    &__logo {
-        margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      text-align: left;
     }
+  }
+
+  &__title {
+    display: block;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      min-width: 231px;
+    }
+  }
+
+  &__connection {
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  }
+
+  &__signup {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      min-width: 450px;
+      align-self: center;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+      min-width: 570px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
 }
-

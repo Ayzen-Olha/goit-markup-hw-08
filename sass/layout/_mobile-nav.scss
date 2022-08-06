@@ -22,7 +22,7 @@
 
   &__icon {
     @include positional-centering;
-    z-index: 100;
+    z-index: 2;
   }
 
   &__cross {
