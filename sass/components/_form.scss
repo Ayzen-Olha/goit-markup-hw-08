@@ -1,7 +1,15 @@
 .form {
   text-align: center;
-  // padding: 40px 40px;
   color: var(--main-text-color);
+  max-width: 370px;
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 
   &__block {
     display: flex;

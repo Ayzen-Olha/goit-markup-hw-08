@@ -5,6 +5,7 @@
     flex-direction: column-reverse;
     gap: 32px;
     margin-bottom: 64px;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 768px) {
@@ -23,7 +24,7 @@
     color: var(--main-text-color);
 
     @media screen and (min-width: 768px) {
-      font-size: inherit;
+      font-size: 12px;
     }
 
     &--large {
@@ -31,7 +32,7 @@
       color: var(--accent-text-color);
 
       @media screen and (min-width: 768px) {
-        font-size: 14px;
+        font-size: 12px;
         color: var(--main-text-color);
       }
     }
